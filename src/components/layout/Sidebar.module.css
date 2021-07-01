@@ -1,0 +1,13 @@
+.sidebar {
+  flex: 0.18;
+  background-color: rgb(31, 29, 29);
+}
+.sidebar__upper {
+  margin-top: 4rem;
+  border-bottom: 1px solid grey;
+  padding: 0.2rem;
+}
+.sidebar__center {
+  border-bottom: 1px solid grey;
+  padding: 0.2rem;
+}
