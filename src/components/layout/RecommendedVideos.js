@@ -25,7 +25,7 @@ function RecommendedVideos() {
         <VideoCard
           title="Bear versus a Tiger"
           image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Tm2fBzXzitDisDkZTLFQX2oKcYNeS5hoI1edfGr8swafpWPwLy7ctP2w8Fn1YByDEjM&usqp=CAU"
-          name="Animal Planet"
+          channelName="Animal Planet"
           avatar="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Animal_Planet_logo.svg/797px-Animal_Planet_logo.svg.png"
           views="23T"
           timestamp="2"
@@ -49,7 +49,7 @@ function RecommendedVideos() {
         <VideoCard
           title="Pool Volleyball, Worldie Saves, Foden's Backheel & Recovery 🔥 Inside Training | England"
           image="https://i.ytimg.com/vi/Jy2VnIiwKhE/maxresdefault.jpg"
-          channelName="PiewDiePie"
+          channelName="Soccer England"
           avatar="https://pbs.twimg.com/profile_images/1338913004751032321/UGvsqQL6.jpg"
           views="612T"
           timestamp="21"
@@ -65,10 +65,26 @@ function RecommendedVideos() {
         <VideoCard
           title="UNPREDICTABLE Auditions That BLEW The Judges Away | X Factor Global"
           image="https://lh3.googleusercontent.com/proxy/DExDgWY5CcsXdsMMElxTxV5YfTIVbPSDhIZ5rJKziZp4HuTWDdBiE65MjLFrZ7TulVJwa3HlX5TVhI7SAheNSdxdc1-3Z7yET9BkMw3dx60029zh7iT9klCWpy6WV7bcZizRNzoxRZqc8gAHEOQ"
-          channelName="PiewDiePie"
+          channelName="X-Factor UK"
           avatar="https://www.techadvisor.com/cmsdata/features/3682800/the_x_factor_1_thumb800.jpg"
           views="121T"
           timestamp="11"
+        />
+        <VideoCard
+          title="How to make best Homemade Pizza in only 20 minutes"
+          image="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-homemade-pizza-horizontal-1542312378.png"
+          channelName="FoodChart"
+          avatar="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2F1590082480%2FGettyImages-945578702.jpg%3Fitok%3DzJRb8Xm5"
+          views="1.2M"
+          timestamp="311"
+        />
+        <VideoCard
+          title="Best of Novak Djokovic (Funniest Moments, dance, best points)"
+          image="https://i.ytimg.com/vi/kLoTwzUFqrU/hqdefault.jpg"
+          channelName="TennisPoint"
+          avatar="https://ichef.bbci.co.uk/news/640/cpsprodpb/E1A2/production/_105126775_tennis_bbc.jpg"
+          views="36M"
+          timestamp="44"
         />
       </div>
     </div>

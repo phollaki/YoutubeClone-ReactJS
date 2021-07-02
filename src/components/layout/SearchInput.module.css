@@ -1,0 +1,34 @@
+.searchIcon {
+  font-size: 20px !important;
+  align-items: center;
+  display: "flex";
+  color: grey;
+  margin-left: 10px;
+}
+.searchIcon:hover,
+.searchIcon:active {
+  color: rgb(173, 173, 173) !important;
+}
+.form {
+  display: flex;
+  align-items: center;
+}
+.input input {
+  height: 1.3rem;
+  font-size: 1.1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 0.3rem;
+}
+.input input:hover,
+.input input:active,
+.input input:focus {
+  outline: none;
+}
+.icon {
+  background-color: rgb(75, 74, 74);
+  padding: 2.6px;
+  display: flex;
+  width: 2.5rem;
+}

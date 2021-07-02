@@ -2,7 +2,6 @@ import React from "react";
 import youtubeLogo from "../../assets/youtube-logo.png";
 import styles from "./Header.module.css";
 import MenuIcon from "@material-ui/icons/Menu";
-import SearchIcon from "@material-ui/icons/Search";
 import MicIcon from "@material-ui/icons/Mic";
 import VideoCallIcon from "@material-ui/icons/VideoCall";
 import AppsIcon from "@material-ui/icons/Apps";
@@ -13,7 +12,8 @@ import sidebarActions from "../store/sidebar-slice";
 import { Link } from "react-router-dom";
 import Modal from "../UI/Modal";
 import voiceModalActions from "../store/voice-slice";
-import ClearIcon from "@material-ui/icons/Clear";
+import VoiceSearch from "./VoiceSearch";
+import SearchInput from "./SearchInput";
 function Header() {
   const dispatch = useDispatch();
   const voiceModalState = useSelector(
@@ -40,29 +40,7 @@ function Header() {
   if (voiceModalState) {
     return (
       <Modal cssStyle="voiceSearch">
-        <ClearIcon
-          onClick={showVoiceModalHandler}
-          style={{ cursor: "pointer", marginLeft: "95%" }}
-        />
-        <h2>Voice Search</h2>
-        <p>
-          For voice search, open your browser settings and allow access to your
-          microphone
-        </p>
-        <div className="microphone">
-          <MicIcon
-            style={{
-              fontSize: "50px",
-              backgroundColor: "grey",
-              padding: "10px",
-              borderRadius: "55px",
-              marginLeft: "40%",
-              marginRight: "50%",
-              marginTop: "70px",
-              cursor: "pointer",
-            }}
-          />
-        </div>
+        <VoiceSearch onShowHandler={showVoiceModalHandler} />
       </Modal>
     );
   }
@@ -76,12 +54,7 @@ function Header() {
         </Link>
       </div>
       <div className={styles.header__center}>
-        <div className={styles.header__center__option__search}>
-          <input placeholder="Keresés"></input>
-          <Link to="/search">
-            <SearchIcon className={styles.searchIcon} />
-          </Link>
-        </div>
+        <SearchInput />
         <div className={styles.header__center__option}>
           <MicIcon onClick={showVoiceModalHandler} />
         </div>
@@ -97,7 +70,7 @@ function Header() {
           <NotificationsIcon />
         </div>
         <div>
-          <Avatar />
+          <Avatar src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.6435-9/139221895_3400616756733639_3792665505054892108_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=174925&_nc_ohc=2iHIbJGpqVwAX8XCGaw&_nc_ht=scontent-vie1-1.xx&oh=d1ef435eade4d2382670479961d14299&oe=60E34931" />
         </div>
       </div>
     </header>

@@ -3,11 +3,9 @@ import styles from "./Modal.module.css";
 import ReactDOM from "react-dom";
 import { useDispatch } from "react-redux";
 import voiceModalActions from "../store/voice-slice";
-
+import sidebarActions from "../store/sidebar-slice";
 const Backdrop = (props) => {
-  return (
-    <div className={styles.backdrop} onClick={props.hideVoiceHandler}></div>
-  );
+  return <div className={styles.backdrop} onClick={props.hideHandler}></div>;
 };
 const ModalOverlay = (props) => {
   return (
@@ -21,13 +19,14 @@ const portalElement = document.getElementById("overlays");
 
 function Modal(props) {
   const dispatch = useDispatch();
-  const hideVoiceModalHandler = () => {
+  const hideModalHandler = () => {
     dispatch(voiceModalActions.actions.hideVoiceModal());
+    dispatch(sidebarActions.actions.hideSidebar());
   };
   return (
     <Fragment>
       {ReactDOM.createPortal(
-        <Backdrop hideVoiceHandler={hideVoiceModalHandler} />,
+        <Backdrop hideHandler={hideModalHandler} />,
         portalElement
       )}
       {ReactDOM.createPortal(
