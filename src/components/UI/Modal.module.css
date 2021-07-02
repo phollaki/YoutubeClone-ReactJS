@@ -1,0 +1,37 @@
+.backdrop {
+  position: fixed;
+  top: 3.5rem;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.sidebar {
+  position: fixed;
+  width: 230px;
+  left: 0;
+  background-color: rgb(31, 29, 29);
+  height: 200%;
+  z-index: 30;
+}
+.voiceSearch {
+  position: fixed;
+  top: 2vh;
+  left: 18%;
+  height: 20rem;
+  width: 60%;
+  background-color: white;
+  padding: 1rem;
+  background-color: rgb(31, 29, 29);
+  z-index: 30;
+  color: white;
+  animation: slide-down 300ms ease-out forwards;
+}
+.voiceSearch h2 {
+  color: white;
+}
+.voiceSearch p {
+  margin-top: 10px;
+  color: grey;
+}

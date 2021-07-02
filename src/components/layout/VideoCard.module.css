@@ -1,7 +1,8 @@
 .videoCard {
   margin-bottom: 40px;
-  width: 300px;
+  width: 270px;
   transition: transform 100ms ease-in;
+  margin-left: 20px;
 }
 .videoCard:hover {
   transform: scale(1.07);

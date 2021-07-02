@@ -3,12 +3,14 @@
   align-items: center;
   flex: 1;
   margin: 0;
-  padding: 0 20px;
+  padding: 0 5px;
 }
 .sidebarRow__title {
   margin-left: 20px;
   font-size: 1rem;
   color: rgb(236, 233, 233);
+
+  text-decoration: none;
 }
 .sidebarRow__icon {
   margin-left: 20px;

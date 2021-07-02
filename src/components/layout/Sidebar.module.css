@@ -1,9 +1,21 @@
 .sidebar {
-  flex: 0.18;
+  flex: 0.3;
   background-color: rgb(31, 29, 29);
 }
+.sidebar__top {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  color: white;
+}
+.sidebar__top img {
+  margin-left: 2rem;
+  height: 1.3rem;
+}
 .sidebar__upper {
-  margin-top: 4rem;
+  border-top: 1px solid rgb(65, 64, 64);
   border-bottom: 1px solid grey;
   padding: 0.2rem;
 }
